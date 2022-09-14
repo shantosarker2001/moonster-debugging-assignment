@@ -124,7 +124,7 @@ const start = () => {
     }
     count--;
 
-  }, 500);
+  }, 1000);
 };
 
 // START Countdown
