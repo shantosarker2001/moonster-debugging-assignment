@@ -3,7 +3,6 @@ const histories = document.getElementById("histories");
 function addHistory(questionText, timeTaken, errorCount) {
   const newRow = document.createElement("div");
   newRow.classList.add("card");
-  newRow.classList.add("text-black")
   newRow.innerHTML = `
   <h3>${questionText}</h3>
   <div>
@@ -11,7 +10,6 @@ function addHistory(questionText, timeTaken, errorCount) {
   <p>You made <span class="bold red">${errorCount}</span> mistakes</p>
   </div>
   `;
-
   histories.appendChild(newRow);
 
   let previousTests = JSON.parse(localStorage.getItem("testHistory")) || [];

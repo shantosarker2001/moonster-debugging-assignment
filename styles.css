@@ -147,11 +147,11 @@ button {
   cursor: pointer;
 }
 
-#histories {
+/* #histories {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-}
+} */
 
 .card {
   width: 100%;
@@ -161,40 +161,41 @@ button {
   justify-content: space-between;
   align-items: center;
   padding: 20px 30px;
-  color: white;
+  /* color: rgb(246, 239, 239); */
   border-radius: 15px;
-  background: rgb(224, 220, 220);
+  background: rgb(28, 27, 27);
   background: linear-gradient(92.49deg,
       rgba(255, 255, 255, 0.1) 0.18%,
       rgba(255, 255, 255, 0.05) 99.85%);
-
   backdrop-filter: blur(5px);
   margin-bottom: 30px;
 }
 
-/* /* @media (max-width: 768px) {
+/* and (max-width: 1240px) */
+@media (min-width: 769px) {
+  #histories {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1% 2%;
+
+  }
+
   .card {
-    width: 100%;
+    display: flex;
     flex-direction: column;
   }
 }
 
-/* Large devices (laptops/desktops, 992px and up) */
-/* @media only screen and (max-width: 992px) {
+@media (max-width: 768px) {
+
   .card {
-    width: auto;
+    display: flex;
     flex-direction: column;
+    width: 100%;
   }
+}
 
-  #display {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-  }
-} */
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-/* @media only screen and (max-width: 1200px) {} */
-*/ */ #modal-background {
+#modal-background {
   background: rgb(255, 255, 255);
   background: linear-gradient(92.49deg,
       rgba(255, 255, 255, 0.1) 0.18%,
@@ -204,15 +205,4 @@ button {
   width: 100%;
   position: fixed;
   top: 0;
-}
-
-@media only screen and (max-width: 700px) {
-  .box-container {
-    padding: 0 20px;
-    width: 100%;
-  }
-
-  .card {
-    flex-direction: column;
-  }
 }
