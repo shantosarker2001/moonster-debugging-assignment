@@ -11,10 +11,10 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-dark bg-dark text-white navbar-expand-lg">
+        <nav class="navbar navbar-dark bg-dark text-white navbar-expand-lg shadow  border-bottom-2">
             <div class="container">
-                <a class="navbar-brand fw-bold fs-2" href="#">BD <span
-                        class="bg-danger py-1 px-2 rounded-2">NEWS</span></a>
+                <a class="navbar-brand fw-bold fs-2" href="#">TYPING <span
+                        class="bg-danger py-1 px-2 rounded-2">TEST</span></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -32,73 +32,58 @@
                             <a class="nav-link fs-6 fw-semibold" href="#">Blogs</a>
                         </li>
                     </ul>
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-light" type="submit">Search</button>
-                    </form>
                 </div>
             </div>
         </nav>
 
     </header>
-    <main style="min-height:45vh">
+    <main style="min-height:45vh" class="bg-dark">
         <div id="blog">
             <div class="container">
                 <div class="row">
                     <h1 class="fw-bold py-5 text-danger text-center">Wellcome to My Blogs</h1>
                 </div>
                 <div class="row">
-                    <div class="col-12 border rounded-3 p-4 mb-4 bg-light shadow">
-                        <h2>What is the Difference Between Var,let,Const ?</h2>
-                        <p class="text-justify fs-5"><span class="fs-4 text-danger fw-semibold">Ans:</span>The scope of
-                            a var variable is functional scope. The scope of a let
-                            variable is block scope.
-                            The scope of a const variable is block scope. It can be updated and re-declared into the
-                            scope.
-                            The differences between var, let, and const variable declaration in JavaScript include:
-                            Variables declared with var and const are scoped to the immediate function body.
-                            Variables declared with the var keyword are hoisted. Hoisting means that the variable can be
-                            accessed in their enclosing scope even before they are declared.
-                            Variables declared with the let keyword are block-scoped, which means the variables will
-                            have scope to the immediate enclosing block.</p>
-                    </div>
-                    <div class="col-12 border rounded-3 p-4 mb-4 bg-light shadow">
-                        <h2>What is the Difference Between Arrow function and Regular function ?</h2>
-                        <p class="text-justify fs-5"><span class="fs-4 text-danger fw-semibold">Ans:</span> Regular
-                            functions created using function declarations or expressions are constructible and callable.
-                            Since regular functions are constructible, they can be called using the new keyword.
-                            However, the arrow functions are only callable and not constructible, i.e arrow functions
-                            can never be used as constructor functions.</p>
-                    </div>
-                    <div class="col-12 border rounded-3 p-4 mb-4 bg-light shadow">
-                        <h2>What is the Difference Between map,forEach,filter,find ?</h2>
-                        <p class="text-justify fs-5">
-                            <span class="fs-4 text-danger fw-semibold">Ans:</span>
+                    <div class="col-12 border rounded-3 p-4 mb-4 bg-dark shadow">
+                        <h2 class="text-danger">Difference Between Local-Storage and Session Storage ?</h2>
+                        <p class="text-justify fs-5 text-white"><span
+                                class="fs-4 text-danger fw-semibold">Ans:</span>The read-only
+                            sessionStorage property accesses a session Storage object for the current origin.
 
-                        <p class="text-justify fs-5">map() executes the same code on every element in an array and
-                            returns a new array with the
-                            updated
-                            elements.</p>
-                        <p class="text-justify fs-5">.forEach(), is used to execute the same code on every element in an
-                            array but does not change
-                            the array and it returns undefined.</p>
-                        <p class="text-justify fs-5">.filter() checks every element in an array to see if it meets a
-                            certain criteria and returns
-                            a new array with the elements that return truthy for the criteria.</p>
-                        <p class="text-justify fs-5">find() executes the first element which is follow the condition or
-                            true of the conditon and
-                            returns
-                            a new array with the elements that return truthy for the criteria</p>
-                        </p>
+                            sessionStorage is similar to localStorage ; the difference is that while data in
+                            localStorage doesn't expire, data in sessionStorage is cleared when the page session ends.
+                            Whenever a document is loaded in a particular tab in the browser, a unique page session gets
+                            created and assigned to that particular tab.</p>
                     </div>
-                    <div class="col-12 border rounded-3 p-4 mb-4 bg-light shadow">
-                        <h2>Why we use template string ?</h2>
-                        <p class="text-justify fs-5"><span class="fs-4 text-danger fw-semibold">Ans:</span>Its basically
-                            use to load data dynamically. Its also called Backticks.
-                            Image result for why we use template string in javascript
-                            Backticks are an ES6 feature that allows you to create strings in JavaScript. Although
-                            backticks are mostly used for HTML or code embedding purposes, they also act similar to
-                            single and double quotes. Besides, using backticks makes it easier for string operations.
+                    <div class="col-12 border rounded-3 p-4 mb-4 bg-dark shadow">
+                        <h2 class="text-danger">What is difference between local and global scope in JavaScript?</h2>
+                        <p class="text-justify fs-5 text-white"><span
+                                class="fs-4 text-danger fw-semibold">Ans:</span>JavaScript variables have only two
+                            scopes. Global Variables − A global variable has a global scope which means it can be
+                            defined anywhere in your JavaScript code. Local Variables − A local variable will be visible
+                            only within a function where it is defined. Function parameters are always local to that
+                            function..</p>
+                    </div>
+                    <div class="col-12 border rounded-3 p-4 mb-4 bg-dark shadow">
+                        <h2 class="text-danger">HOW Event loop Works on Javascripts?</h2>
+                        <p class="text-justify fs-5 text-white"><span
+                                class="fs-4 text-danger fw-semibold">Ans:</span>The Event Loop has one simple job — to
+                            monitor the Call Stack and the Callback Queue. If the Call Stack is empty, the Event Loop
+                            will take the first event from the queue and will push it to the Call Stack, which
+                            effectively runs it. Such an iteration is called a tick in the Event Loop.</p>
+                    </div>
+                    <div class="col-12 border rounded-3 p-4 mb-4 bg-dark shadow">
+                        <h2 class="text-danger">The reasons of getting undefined?</h2>
+                        <p class="text-justify fs-5 text-white"><span class="fs-4 text-danger fw-semibold">Ans:</span>
+                        <p class="text-justify fs-5 text-white"> 01. A variable that has not been assigned a value is of
+                            type undefined</p>
+                        <p class="text-justify fs-5 text-white"> 02. A method or statement also returns undefined if the
+                            variable that is being evaluated does not have an assigned value.</p>
+                        <p class="text-justify fs-5 text-white"> 03. A function returns undefined if a value was not
+                            returned.</p>
+                        <p class="text-justify fs-5 text-white"> 04. A property which is not exist on an object,if we
+                            try
+                            to access this property then we get undefined.</p>
                         </p>
                     </div>
                 </div>
@@ -107,7 +92,7 @@
     </main>
     <footer class="bg-dark text-white" id="footer">
         <div class="container text-center py-5">
-            <h4>&copy;All rights reserved by BD-NEWS.</h4>
+            <h4>&copy;All rights reserved by TYPING-TEST.</h4>
         </div>
     </footer>
     <script src="app.js"></script>

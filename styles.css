@@ -163,7 +163,7 @@ button {
   padding: 20px 30px;
   color: white;
   border-radius: 15px;
-  background: rgb(255, 255, 255);
+  background: rgb(224, 220, 220);
   background: linear-gradient(92.49deg,
       rgba(255, 255, 255, 0.1) 0.18%,
       rgba(255, 255, 255, 0.05) 99.85%);
@@ -172,7 +172,29 @@ button {
   margin-bottom: 30px;
 }
 
-#modal-background {
+/* /* @media (max-width: 768px) {
+  .card {
+    width: 100%;
+    flex-direction: column;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+/* @media only screen and (max-width: 992px) {
+  .card {
+    width: auto;
+    flex-direction: column;
+  }
+
+  #display {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+} */
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+/* @media only screen and (max-width: 1200px) {} */
+*/ */ #modal-background {
   background: rgb(255, 255, 255);
   background: linear-gradient(92.49deg,
       rgba(255, 255, 255, 0.1) 0.18%,
