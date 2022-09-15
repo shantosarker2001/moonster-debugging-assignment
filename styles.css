@@ -153,11 +153,35 @@ body {
   cursor: pointer;
 }
 
-/* #histories {
+.blog_page {
+  text-align: center;
+  padding: 10px;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  width: 200px;
+  color: white;
+  margin: auto;
+  display: block;
+  text-decoration: none;
+  margin-bottom: 30px;
+  background-color: #171717;
+  border-radius: 10px;
+  border: 2px solid #626463;
+  cursor: pointer;
+}
+
+.blog_page:hover {
+  background-color: #626463;
+  color: black;
+}
+
+#histories {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-} */
+  margin-bottom: 100px;
+}
 
 .card {
   width: 100%;
@@ -167,9 +191,9 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 20px 30px;
-  /* color: rgb(246, 239, 239); */
+  color: rgb(227, 223, 223);
   border-radius: 15px;
-  background: rgb(28, 27, 27);
+  background: rgb(237, 234, 234);
   background: linear-gradient(92.49deg,
       rgba(255, 255, 255, 0.1) 0.18%,
       rgba(255, 255, 255, 0.05) 99.85%);
@@ -182,7 +206,7 @@ body {
   #histories {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 1% 2%;
+    gap: 2% 2%;
 
   }
 
